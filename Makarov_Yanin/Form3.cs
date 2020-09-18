@@ -91,8 +91,6 @@ namespace Makarov_Yanin
             test.Show();
             this.Hide();
         }
-
-
     }
 
 }

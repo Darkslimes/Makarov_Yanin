@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Data.SqlTypes;
 using System.Drawing;
 using System.Linq;
 using System.Security.Cryptography;
@@ -105,6 +106,11 @@ namespace Makarov_Yanin
         {
             this.Close();
 
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            textBox1.Visible = true;
         }
     }
     }   

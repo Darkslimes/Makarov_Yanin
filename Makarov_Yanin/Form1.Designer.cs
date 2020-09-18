@@ -43,6 +43,8 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.библиотекиBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.makarov_YaninDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.книгиBindingSource)).BeginInit();
@@ -50,9 +52,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(12, 12);
+            this.button3.Location = new System.Drawing.Point(0, -1);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(107, 38);
+            this.button3.Size = new System.Drawing.Size(125, 65);
             this.button3.TabIndex = 8;
             this.button3.Text = "Библиотеки";
             this.button3.UseVisualStyleBackColor = true;
@@ -70,9 +72,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 56);
+            this.button2.Location = new System.Drawing.Point(122, -1);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 38);
+            this.button2.Size = new System.Drawing.Size(137, 65);
             this.button2.TabIndex = 6;
             this.button2.Text = "Финансирование";
             this.button2.UseVisualStyleBackColor = true;
@@ -105,9 +107,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 276);
+            this.button1.Location = new System.Drawing.Point(809, -1);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 38);
+            this.button1.Size = new System.Drawing.Size(131, 65);
             this.button1.TabIndex = 9;
             this.button1.Text = "Читательский билет";
             this.button1.UseVisualStyleBackColor = true;
@@ -115,9 +117,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(12, 232);
+            this.button4.Location = new System.Drawing.Point(672, -1);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(107, 38);
+            this.button4.Size = new System.Drawing.Size(142, 65);
             this.button4.TabIndex = 10;
             this.button4.Text = "Читатели";
             this.button4.UseVisualStyleBackColor = true;
@@ -125,9 +127,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(12, 188);
+            this.button5.Location = new System.Drawing.Point(536, -1);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(107, 38);
+            this.button5.Size = new System.Drawing.Size(140, 65);
             this.button5.TabIndex = 11;
             this.button5.Text = "Сотрудники";
             this.button5.UseVisualStyleBackColor = true;
@@ -135,9 +137,9 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(12, 144);
+            this.button6.Location = new System.Drawing.Point(405, -1);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(107, 38);
+            this.button6.Size = new System.Drawing.Size(134, 65);
             this.button6.TabIndex = 12;
             this.button6.Text = "Книги";
             this.button6.UseVisualStyleBackColor = true;
@@ -145,9 +147,9 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(12, 100);
+            this.button7.Location = new System.Drawing.Point(256, -1);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(107, 38);
+            this.button7.Size = new System.Drawing.Size(152, 65);
             this.button7.TabIndex = 13;
             this.button7.Text = "Деловая характеристика работника";
             this.button7.UseVisualStyleBackColor = true;
@@ -155,19 +157,42 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(715, 457);
+            this.button8.Location = new System.Drawing.Point(0, 477);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(212, 72);
+            this.button8.Size = new System.Drawing.Size(195, 64);
             this.button8.TabIndex = 14;
             this.button8.Text = "ВЫХОД";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(755, 477);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(185, 64);
+            this.button9.TabIndex = 15;
+            this.button9.Text = "Авторы";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(201, 521);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(548, 20);
+            this.textBox1.TabIndex = 16;
+            this.textBox1.Text = "Этая великая, гениальная программа создана разработчиками, которых зовут Макаров " +
+    "О.С и Янин Р.Д.";
+            this.textBox1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Makarov_Yanin.Properties.Resources.iStock_9491180681000_d_850;
             this.ClientSize = new System.Drawing.Size(939, 541);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -183,6 +208,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.makarov_YaninDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.книгиBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -201,6 +227,8 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
